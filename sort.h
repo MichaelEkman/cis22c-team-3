@@ -28,12 +28,13 @@ public:
 
 	Sort();
 
-	void swap(vector<double>, double, double);
+	void swap(vector<double>&, double, double);
+	int partition(vector<double>&, int, int);
 	void print(vector<double>);
 
 	void insertionSort(vector<double>);
 	void shellSort(vector<double>);
-	void quickSort(vector<double>);
+	vector<double> quickSort(vector<double>);
 	void heapSort(vector<double>);
 	void selectionSort(vector<double>);
 };
